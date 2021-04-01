@@ -55,7 +55,7 @@ getCases.addEventListener("submit", (e) => {
 
 			result.style.display = "block";
 			searchResults.innerHTML = `"${input}"`;
-			flag.style.display = "block";
+			flag.style.display = "flex";
 			flag.src = `${data.countryInfo.flag}`;
 		})
 
