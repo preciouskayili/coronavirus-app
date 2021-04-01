@@ -49,9 +49,9 @@ getCases.addEventListener("submit", (e) => {
 
 		/*Insert data into DOM elements*/
 		.then((data) => {
-			cases.innerHTML = JSON.stringify(data.cases);
-			recovered.innerHTML = JSON.stringify(data.recovered);
-			deaths.innerHTML = JSON.stringify(data.deaths);
+			cases.innerHTML = data.cases.toLocaleString("en-US");
+			recovered.innerHTML = data.recovered.toLocaleString("en-US");
+			deaths.innerHTML = data.deaths.toLocaleString("en-US");
 
 			result.style.display = "block";
 			searchResults.innerHTML = `"${input}"`;
