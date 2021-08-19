@@ -1,0 +1,69 @@
+* {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(virus.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+body { padding-top: 50px; }
+
+.navbar {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+}
+
+h1 {
+  color: #ccc;
+  opacity: 0.8;
+}
+
+.input-group {
+    backdrop-filter: blur(2rem);
+}
+
+.card {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4)
+  );
+  backdrop-filter: blur(2rem);
+}
+
+input {
+  background: rgba(255, 255, 255, 0.3) !important;
+  border: none !important;
+  height: 3rem;
+  padding: 2rem;
+  color: rgba(44, 44, 44, 0.808) !important;
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+}
+
+
+.btn {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+#country {
+  min-width: 100%;
+}
+
+::placeholder {
+  color: rgba(44, 44, 44, 0.8) !important;
+}

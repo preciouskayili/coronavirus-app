@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Coro-V App</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#">CoroV//</a>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#"><strong>Home /</strong> <span class="text-muted"> search</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    <div class="header" style="display: flex; align-items: center">
+      <div class="container-fluid pt-sm-5">
+        <h1 class="text-center">Search for global count of The Coronavirus.</h1>
+
+        <div class="col">
+          <p id="result" class="text-center text-muted">
+            Showing results for
+            <i id="searchResults"></i>
+          </p>
+
+          <div class="container flex-center mb-5 search-form" style="width: 80%;">
+            <form class="input-group" id="country">
+              <input
+                required
+                class="form-control"
+                id="countrySelect"
+                type="text"
+                placeholder="Enter the name of the country"
+              />
+              <button
+                value="Search"
+                class="btn"
+                type="submit"
+                id="button"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+              <button
+                class="btn btn-primary"
+                disabled
+                id="spinner"
+                style="display: none"
+              >
+                <span class="spinner-border spinner-border-sm"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-dark" style="margin-bottom: 20px">
+              <div class="card-body">
+                <h5 class="text-white">Cases</h5>
+                <p id="cases">Cases</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-dark" style="margin-bottom: 20px">
+              <div class="card-body">
+                <h5 class="text-white">Recovered</h5>
+                <p id="recovered">0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-white" style="margin-bottom: 20px">
+              <div class="card-body">
+                <h5>Deaths</h5>
+                <p id="deaths">0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card text-white" style="margin-bottom: 20px">
+              <div class="card-body">
+                <p>Country's flag:</p>
+                <i class="fa fa-flag" id="flagIcon" style="display: none"></i>
+                <img
+                  src=""
+                  class="shadow-lg mx-auto"
+                  alt=""
+                  id="flag"
+                  width="50"
+                  height="30"
+                  style="display: none"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+    ></script>
+    <script src="api.js"></script>
+  </body>
+</html>
